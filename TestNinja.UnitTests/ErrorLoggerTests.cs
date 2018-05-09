@@ -45,8 +45,10 @@ namespace TestNinja.UnitTests
             var id = Guid.Empty;
 
 
+            //publisher event point to subscribe's handler
             logger.ErrorLogged += (sender, args) => { id = args; };
 
+            //We need to do the subscription before calling the method,otherwise the subscriber wouldn't be notified about the event.
             logger.Log("a");
 
 
