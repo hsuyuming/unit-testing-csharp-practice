@@ -53,6 +53,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CustomerContollerTests.cs" />
+    <Compile Include="ErrorLoggerPrivateTests.cs" />
     <Compile Include="ErrorLoggerTests.cs" />
     <Compile Include="HtmlFormatterTest.cs" />
     <Compile Include="MathTests.cs" />

@@ -55,6 +55,7 @@
     <Compile Include="Fundamentals\DateHelper.cs" />
     <Compile Include="Fundamentals\DemeritPointsCalculator.cs" />
     <Compile Include="Fundamentals\ErrorLogger.cs" />
+    <Compile Include="Fundamentals\ErrorLoggerPrivate.cs" />
     <Compile Include="Fundamentals\FizzBuzz.cs" />
     <Compile Include="Fundamentals\HtmlFormatter.cs" />
     <Compile Include="Fundamentals\Math.cs" />

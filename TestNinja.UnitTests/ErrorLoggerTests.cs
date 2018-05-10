@@ -51,9 +51,9 @@ namespace TestNinja.UnitTests
             //We need to do the subscription before calling the method,otherwise the subscriber wouldn't be notified about the event.
             logger.Log("a");
 
-
-
             Assert.That(id, Is.Not.EqualTo(Guid.Empty));
+
         }
+
     }
 }

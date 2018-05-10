@@ -1,9 +1,8 @@
-﻿
-using System;
+﻿using System;
 
 namespace TestNinja.Fundamentals
 {
-    public class ErrorLogger
+    public class ErrorLoggerPrivate
     {
         private Guid _errorId;
         public string LastError { get; set; }
@@ -27,11 +26,30 @@ namespace TestNinja.Fundamentals
             // Write the log to a storage
             // ...
 
-            //original
-            ErrorLogged?.Invoke(this, Guid.NewGuid());
+            //Method1
+            //            _errorId = Guid.NewGuid();
+            //            OnErrorLogged();
 
-            _errorId = Guid.NewGuid();
+            //Method2
+            //ErrorLogged?.Invoke(this, _errorId);
 
+            //Normal
+            //_errorId = Guid.NewGuid();
+
+            //Normal2
+            OnErrorLogged(Guid.NewGuid());
+
+
+        }
+
+        //        public virtual void OnErrorLogged()
+        //        {
+        //            ErrorLogged?.Invoke(this, _errorId);
+        //        }
+
+        public virtual void OnErrorLogged(Guid errorId)
+        {
+            ErrorLogged?.Invoke(this, errorId);
         }
 
     }
