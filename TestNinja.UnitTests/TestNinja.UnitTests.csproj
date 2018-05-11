@@ -53,6 +53,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CustomerContollerTests.cs" />
+    <Compile Include="DemeritPointsCalculatorTests.cs" />
     <Compile Include="ErrorLoggerPrivateTests.cs" />
     <Compile Include="ErrorLoggerTests.cs" />
     <Compile Include="FizzBuzzTests.cs" />
@@ -60,6 +61,7 @@
     <Compile Include="MathTests.cs" />
     <Compile Include="RevervationTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StackTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
